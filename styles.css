@@ -5,6 +5,35 @@
 	box-sizing: border-box;
 }
 
+#galerie {
+	padding: 2rem 1rem;
+  }
+  
+  #galerie h2 {
+	margin-bottom: 1.5rem;
+	text-align: center;
+  }
+  
+  .galerie-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+  }
+  
+  .galerie-grid img {
+	width: 100%;
+	height: auto;
+	display: block;
+	object-fit: cover;
+	border-radius: 8px;
+  }
+  
+  @media (max-width: 599px) {
+	.galerie-grid {
+	  grid-template-columns: 1fr;
+	}
+  }
+  
 body {
 	font-family: 'Arial', sans-serif;
 	line-height: 1.6;
